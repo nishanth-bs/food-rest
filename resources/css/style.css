@@ -6,9 +6,9 @@
 
 html {
   background-color: #fff;
-  font-family: sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 100;
   text-rendering: optimizeLegibility;
 }
 
@@ -38,4 +38,55 @@ header {
   left: 50%;
   /* transform half of its width and height to the left */
   transform: translate(-50%,-50%);
+}
+
+h1 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 200%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+}
+
+.btn:link,
+.btn:visited{
+  /* inline block = inline + can have margin*/
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 500px;
+  /* for the bg color to slowly change when hovered over */
+  transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background-color: #e67e22;
+  border: 1px solid #e67e22;
+  color: #fff;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+  border: 1px solid #e67e22;
+  color: #e67e22;
+}
+
+.btn:hover,
+.btn:active{
+  background-color: #cf6d17;
+}
+.btn-full:hover,
+.btn-full:active {
+  border: 1px solid #cf6d17;
+  color: #fff;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+  border: 1px solid #cf6d17;
+  color: #fff;
 }
