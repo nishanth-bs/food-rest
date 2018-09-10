@@ -105,6 +105,7 @@ h1 {
   margin-top: 55px;
 }
 .main-nav li{
+  /*inline-block so they can be side by side and have margin bn em */
   display: inline-block;
   margin-left: 40px;
 }
